@@ -35,7 +35,7 @@
                 Keyboard="Default"
                 ReturnType="Next"
                 IsPassword="True" />
-                <Label Text="Esuqeceu sua senha?" FontSize="Small" HorizontalOptions="EndAndExpand"></Label>
+                <Label Text="Esuqeceu sua senha?" TextColor="Gray" FontSize="Small" HorizontalOptions="EndAndExpand"></Label>
 
                 <Button Text="Entrar" TextTransform="None" HeightRequest="55" Margin="0,25" TextColor="#F3B43B" BackgroundColor="#606062" Visual="Material"></Button>
 
