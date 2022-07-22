@@ -11,29 +11,44 @@
              ios:Page.UseSafeArea="True"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <ScrollView
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"></RowDefinition>          
+                <RowDefinition Height="70*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Padding="30">
+                <Image Source="goldlizze_logo_png"></Image>
+            </Grid>
+
+                         
+            <StackLayout Grid.Row="1" VerticalOptions="CenterAndExpand">
+             
+                  <components:OutlinedMaterialEntry
+                PlaceholderText="E-mail"
+                Keyboard="Text"                      
+                ReturnType="Next" />
+
+                <components:OutlinedMaterialEntry
+                PlaceholderText="Senha"
+                Keyboard="Default"
+                ReturnType="Next"
+                IsPassword="True" />
+                <Label Text="Esuqeceu sua senha?" FontSize="Small" HorizontalOptions="EndAndExpand"></Label>
+
+                <Button Text="Entrar" TextTransform="None" HeightRequest="55" Margin="0,25" TextColor="#F3B43B" BackgroundColor="#606062" Visual="Material"></Button>
+
+            </StackLayout>
+        </Grid>
+        <!--<ScrollView IsVisible="false"
         BackgroundColor="White">
             <StackLayout
             Orientation="Vertical"
             Padding="30"
             Spacing="15">
 
-                <Entry
-                Visual="Default"
-                BackgroundColor="White"
-                Placeholder="This it's a regular entry" 
-                PlaceholderColor="Gray"
-                FontSize="Medium"
-                TextColor="Black" />
-
-                <Entry
-                Visual="Material"
-                BackgroundColor="White"
-                Placeholder="This it's a Xamarin Material Entry" 
-                PlaceholderColor="Gray" 
-                FontSize="Medium"
-                TextColor="Black" />
-
+              
                 <components:OutlinedMaterialEntry
                 PlaceholderText="Outlined Material Entry"
                 Keyboard="Text"
@@ -69,7 +84,8 @@
                 ReturnType="Next"
                 HasError="True"
                 ErrorText="Error message" />
+
             </StackLayout>
-        </ScrollView>
+        </ScrollView>-->
     </ContentPage.Content>
 </ContentPage>

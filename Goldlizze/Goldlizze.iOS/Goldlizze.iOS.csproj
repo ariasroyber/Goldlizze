@@ -123,6 +123,11 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\ic_error.png" />
+    <BundleResource Include="Resources\ic_eye_close.png" />
+    <BundleResource Include="Resources\ic_eye_open.png" />
+    <BundleResource Include="Resources\ic_user.png" />
+    <BundleResource Include="Resources\goldlizze_logo_png.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -142,7 +147,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Goldlizze\Goldlizze.csproj">
-      <Project>{4851EFAB-3036-4489-A8FA-40707BF8FDCF}</Project>
+      <Project>{774BE9A0-8C0C-4EFF-BB49-A6D31C1C307D}</Project>
       <Name>Goldlizze</Name>
     </ProjectReference>
   </ItemGroup>
