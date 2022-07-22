@@ -63,6 +63,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Effects\XFOutlinedMaterialEntry.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -145,4 +146,5 @@
       <Name>Goldlizze</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
 </Project>
