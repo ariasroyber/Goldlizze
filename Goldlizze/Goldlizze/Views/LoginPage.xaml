@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Visual="Material"
              mc:Ignorable="d"
+             BackgroundColor="White"
              x:Class="Goldlizze.Views.LoginPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+            <Entry Placeholder="test" BackgroundColor="White" ></Entry>
+            <Entry Placeholder="material" Visual="Material" BackgroundColor="White"></Entry>
+            <Button VerticalOptions="Center" Visual="Material" Text="Login" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
